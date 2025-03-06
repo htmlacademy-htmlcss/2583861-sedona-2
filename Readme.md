@@ -2,9 +2,7 @@
 
 * Студент: [Александр Шуватов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2583861).
 * Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
-* Мой проект Седона:
-  Главная страница: [index.html](https://alexandershuvatov.github.io/2583861-sedona-2/).
-  Страница каталога: [catalog.html](https://alexandershuvatov.github.io/2583861-sedona-2/).
+* Сайт: [Мой проект Седона](https://alexandershuvatov.github.io/2583861-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
