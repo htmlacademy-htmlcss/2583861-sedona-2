@@ -9,7 +9,8 @@
   <body>
     <header data-test="header" class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html"><img src="#" alt="Логотип сайта Седона"></a>
+        <a class="navigation-logo" href="index.html"><img src="images/logo-city-of-sedona.svg" width="140" height="70"
+            alt="Логотип сайта Седона"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -40,13 +41,13 @@
       </nav>
     </header>
     <main data-test="main" class="catalog-main">
-      <h1 class="catalog-page-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная страница</span></a>
-        </li>
-        <li class="breadcrumbs-item"><a class="active" href="catalog.html">Каталог</a></li>
-      </ul>
       <section data-test="filter" class="catalog-filter">
+        <h1 class="catalog-page-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная страница</span></a>
+          </li>
+          <li class="breadcrumbs-item"><a class="active" href="catalog.html">Каталог</a></li>
+        </ul>
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
@@ -98,14 +99,23 @@
           <option value="Сначала дешевые">Сначала дешевые</option>
           <option value="Сначала дорогие">Сначала дорогие</option>
         </select>
-        <a href="catalog.html?view=tile"><span class="visually-hidden">Плитка</span></a>
-        <a href="catalog.html?view=card"><span class="visually-hidden">Карточка</span></a>
-        <a href="catalog.html?view=list"><span class="visually-hidden">Список</span></a>
+        <ul class="view-change-list">
+          <li class="view-change-link">
+            <a href="catalog.html?view=tile"><span class="visually-hidden">Плитка</span></a>
+          </li>
+          <li class="view-change-link">
+            <a href="catalog.html?view=card"><span class="visually-hidden">Карточка</span></a>
+          </li>
+          <li class="view-change-link">
+            <a href="catalog.html?view=list"><span class="visually-hidden">Список</span></a>
+          </li>
+        </ul>
       </section>
       <section data-test="catalog" class="catalog">
         <ul class="hotels-list">
           <li class="hotels-item">
-            <a href="#"><img src="#" alt="Amara Resort & Spa"></a>
+            <a href="#"><img src="images/catalog/hotel-amara-resort-spa.jpg" width="300" height="212"
+                alt="Amara Resort & Spa"></a>
             <a href="#">
               <h3>Amara Resort & Spa</h3>
             </a>
@@ -117,7 +127,8 @@
             <p>Рейтинг: 8,5</p>
           </li>
           <li class="hotels-item">
-            <a href="#"><img src="#" alt="Villas at Poco Diablo"></a>
+            <a href="#"><img src="images/catalog/hotel-villas-at-poco-diablo.jpg" width="300" height="212"
+                alt="Villas at Poco Diablo"></a>
             <a href="#">
               <h3>Villas at Poco Diablo</h3>
             </a>
@@ -129,7 +140,8 @@
             <p>Рейтинг: 9,2</p>
           </li>
           <li class="hotels-item">
-            <a href="#"><img src="#" alt="Desert Quail Inn"></a>
+            <a href="#"><img src="images/catalog/hotel-desert-quail-inn.jpg" width="300" height="212"
+                alt="Desert Quail Inn"></a>
             <a href="#">
               <h3>Desert Quail Inn</h3>
             </a>
@@ -141,7 +153,8 @@
             <p>Рейтинг: 6,9</p>
           </li>
           <li class="hotels-item">
-            <a href="#"><img src="#" alt="GreenTree Inn"></a>
+            <a href="#"><img src="images/catalog/hotel-greentree-inn.jpg" width="300" height="212"
+                alt="GreenTree Inn"></a>
             <a href="#">
               <h3>GreenTree Inn</h3>
             </a>
@@ -201,7 +214,8 @@
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="htmlacademy-logo" src="#">
+        <img class="htmlacademy-logo" src="images/html-academy-logo.svg" width="115" height="33"
+          alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
