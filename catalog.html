@@ -90,10 +90,10 @@
           </fieldset>
           <fieldset>
             <legend class="fieldset-legend">Стоимость, ₽:</legend>
-            <label for="min-cost">От:<input type="number" id="min-cost" name="Стоимость от:" min="0" max="8999"
-                placeholder="0"></label>
-            <label for="max-cost">До:<input type="number" id="max-cost" name="Стоимость до:" min="1" max="9000"
-                placeholder="9000"></label>
+            <label for="min-cost">От:<input class="min-cost-filter" type="number" id="min-cost" name="Стоимость от:" min="0" max="8999"
+                value="0"></label>
+            <label for="max-cost">До:<input class="max-cost-filter" type="number" id="max-cost" name="Стоимость до:" min="1" max="9000"
+                value="9000"></label>
           </fieldset>
           <button class="filter-submit-btn" type="submit">Применить</button>
           <button class="filter-reset-btn" type="reset">Сбросить</button>
@@ -198,7 +198,7 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden">Введите ваш e-mail:
-            <input name="email" type="email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-email" name="email" type="email" placeholder="Ваш e-mail" required>
           </label>
           <button class="subscribe-btn" type="submit">Подписаться</button>
         </form>
