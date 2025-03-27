@@ -26,12 +26,12 @@
           </ul>
           <ul class="navigation-user-list">
             <li class="navigation-user-item">
-              <a class="navigation-link navigation-user-link" href="#">
+              <a class="navigation-link navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link navigation-user-link" href="#">
+              <a class="navigation-link navigation-user-link navigation-user-favourites" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="navigation-favourites-number">12</span>
               </a>
@@ -111,33 +111,33 @@
           </section>
         </div>
         <div class="catalog-container">
-          <section class="sorting">
-            <h2 class="sorting-title">Найдено гостиниц: <span>38</span></h2>
-            <select class="sorting-select" name="sorting-items">
-              <option value="Сначала дешевые">Сначала дешевые</option>
-              <option value="Сначала дорогие">Сначала дорогие</option>
-            </select>
-            <ul class="view-change-list">
-              <li class="view-change-item active">
-                <a class="view-change-link view-change-link-tile" href="catalog.html?view=tile"><span
-                    class="visually-hidden">Плитка</span></a>
-              </li>
-              <li class="view-change-item">
-                <a class="view-change-link view-change-link-card" href="catalog.html?view=card"><span
-                    class="visually-hidden">Карточка</span></a>
-              </li>
-              <li class="view-change-item">
-                <a class="view-change-link view-change-link-list" href="catalog.html?view=list"><span
-                    class="visually-hidden">Список</span></a>
-              </li>
-            </ul>
-          </section>
           <section data-test="catalog" class="catalog">
+            <div class="sorting-container">
+              <h2 class="sorting-title">Найдено гостиниц: <span>38</span></h2>
+              <select class="sorting-select" name="sorting-items">
+                <option value="Сначала дешевые">Сначала дешевые</option>
+                <option value="Сначала дорогие">Сначала дорогие</option>
+              </select>
+              <ul class="view-change-list">
+                <li class="view-change-item active">
+                  <a class="view-change-link view-change-link-tile" href="catalog.html?view=tile"><span
+                      class="visually-hidden">Плитка</span></a>
+                </li>
+                <li class="view-change-item">
+                  <a class="view-change-link view-change-link-card" href="catalog.html?view=card"><span
+                      class="visually-hidden">Карточка</span></a>
+                </li>
+                <li class="view-change-item">
+                  <a class="view-change-link view-change-link-list" href="catalog.html?view=list"><span
+                      class="visually-hidden">Список</span></a>
+                </li>
+              </ul>
+            </div>
             <ul class="catalog-hotels-list">
               <li class="catalog-hotel-card">
                 <a href="#"><img src="images/catalog/hotel-amara-resort-spa.jpg" width="300" height="212"
                     alt="Амара Резорт и Спа"></a>
-                <a class="hotels-item-link" href="#">
+                <a class="hotels-item-link hotels-item-link-title" href="#">
                   <h3 class="catalog-hotel-title">Amara Resort & Spa</h3>
                 </a>
                 <p>Гостиница</p>
@@ -150,7 +150,7 @@
               <li class="catalog-hotel-card">
                 <a href="#"><img src="images/catalog/hotel-villas-at-poco-diablo.jpg" width="300" height="212"
                     alt="Виллы Оф Поко Дайабло"></a>
-                <a class="hotels-item-link" href="#">
+                <a class="hotels-item-link hotels-item-link-title" href="#">
                   <h3 class="catalog-hotel-title">Villas at Poco Diablo</h3>
                 </a>
                 <p>Гостиница</p>
@@ -163,7 +163,7 @@
               <li class="catalog-hotel-card">
                 <a href="#"><img src="images/catalog/hotel-desert-quail-inn.jpg" width="300" height="212"
                     alt="Дезерт Квейл Инн"></a>
-                <a class="hotels-item-link" href="#">
+                <a class="hotels-item-link hotels-item-link-title" href="#">
                   <h3 class="catalog-hotel-title">Desert Quail Inn</h3>
                 </a>
                 <p>Гостиница</p>
@@ -176,7 +176,7 @@
               <li class="catalog-hotel-card">
                 <a href="#"><img src="images/catalog/hotel-greentree-inn.jpg" width="300" height="212"
                     alt="Гринтри Инн"></a>
-                <a class="hotels-item-link" href="#">
+                <a class="hotels-item-link hotels-item-link-title" href="#">
                   <h3 class="catalog-hotel-title">GreenTree Inn</h3>
                 </a>
                 <p>Гостиница</p>
@@ -187,28 +187,26 @@
                 <p class="hotel-rating">Рейтинг: 5,0</p>
               </li>
             </ul>
-            <div class="pagination-container">
-              <ul class="pagination-list">
-                <li class="pagination-item current">
-                  <a class="pagination-link current" href="#">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">4</a>
-                </li>
-                <li class="pagination-item pagination-item-more">
-                  <a class="pagination-link pagination-link-more" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">10</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="pagination-list">
+              <li class="pagination-item current">
+                <a class="pagination-link current" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item pagination-item-more">
+                <a class="pagination-link pagination-link-more" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
           </section>
         </div>
         <section data-test="subscribe" class="subscribe">
