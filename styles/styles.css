@@ -1091,10 +1091,12 @@ body {
 
 .view-change-link:focus-visible {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .view-change-link:active {
   border: 2px solid #000000;
+  outline: none;
 }
 
 .view-change-link-tile {
