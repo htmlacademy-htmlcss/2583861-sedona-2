@@ -2,8 +2,9 @@
 <html lang="ru">
 
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
     <title>Каталог гостиниц Седоны</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -11,8 +12,8 @@
     <div class="site-container">
       <header data-test="header" class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html"><img src="images/logo-city-of-sedona.svg" width="140" height="70"
-              alt="Логотип сайта Седона"></a>
+          <a class="navigation-logo" href="index.html">
+            <img src="images/logo-city-of-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -21,7 +22,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user-list">
@@ -66,22 +67,24 @@
                   <li class="filter-input checkbox-filter-input">
                     <label class="filter-label" for="swimming-pool">
                       <input class="checkbox-input visually-hidden" type="checkbox" id="swimming-pool" name="Бассейн"
-                        value="Да" checked>Бассейн
+                        value="Да" checked>
                       <span class="checkbox-mark"></span>
+                      Бассейн
                     </label>
                   </li>
                   <li class="filter-input checkbox-filter-input">
                     <label class="filter-label" for="parking">
                       <input class="checkbox-input visually-hidden" type="checkbox" id="parking" name="Парковка"
-                        value="Да" checked>Парковка
+                        value="Да" checked>
                       <span class="checkbox-mark"></span>
+                      Парковка
                     </label>
                   </li>
                   <li class="filter-input checkbox-filter-input">
                     <label class="filter-label" for="wi-fi">
-                      <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="Wi-Fi"
-                        value="Да">Wi-Fi
+                      <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="Wi-Fi" value="Да">
                       <span class="checkbox-mark"></span>
+                      Wi-Fi
                     </label>
                   </li>
                 </ul>
@@ -92,22 +95,25 @@
                   <li class="filter-input radio-filter-input">
                     <label class="filter-label" for="hotel">
                       <input class="radio-input visually-hidden" type="radio" id="hotel" name="Тип жилья:"
-                        value="Гостиница" tabindex="0" checked>Гостиница
+                        value="Гостиница" tabindex="0" checked>
                       <span class="radio-mark"></span>
+                      Гостиница
                     </label>
                   </li>
                   <li class="filter-input radio-filter-input">
                     <label class="filter-label" for="motel">
                       <input class="radio-input visually-hidden" type="radio" id="motel" name="Тип жилья:"
-                        value="Мотель" tabindex="0">Мотель
+                        value="Мотель" tabindex="0">
                       <span class="radio-mark"></span>
+                      Мотель
                     </label>
                   </li>
                   <li class="filter-input radio-filter-input">
                     <label class="filter-label" for="apartments">
                       <input class="radio-input visually-hidden" type="radio" id="apartments" name="Тип жилья:"
-                        value="Апартаменты" tabindex="0">Апартаменты
+                        value="Апартаменты" tabindex="0">
                       <span class="radio-mark"></span>
+                      Апартаменты
                     </label>
                   </li>
                 </ul>
@@ -125,9 +131,9 @@
                     name="Стоимость до:" min="0" value="9000">
                 </label>
                 <div class="range-slider">
-                  <div class="range-bar" style="left: 0; width: 230px">
-                    <div class="range-slider-handler range-slider-handler-min" tabindex="0"></div>
-                    <div class="range-slider-handler range-slider-handler-max" tabindex="0"></div>
+                  <div class="range-bar" style="left: 0; width: 227px">
+                    <button class="range-slider-handler range-slider-handler-min" type="button"></button>
+                    <button class="range-slider-handler range-slider-handler-max" type="button"></button>
                   </div>
                 </div>
               </fieldset>
@@ -140,8 +146,10 @@
         </div>
         <div class="catalog-container">
           <section data-test="catalog" class="catalog">
-            <h2 class="sorting-title">Найдено гостиниц: <span>38</span></h2>
-            <select class="sorting-select" name="sorting-items">
+            <h2 class="sorting-title">Найдено гостиниц:
+              <span>38</span>
+            </h2>
+            <select class="sorting-select" name="sorting-items" aria-label="Сортировка">
               <option value="Сначала дешевые">Сначала дешевые</option>
               <option value="Сначала дорогие">Сначала дорогие</option>
             </select>
@@ -164,9 +172,10 @@
             </ul>
             <ul class="catalog-hotels-list">
               <li class="catalog-hotel-card">
-                <a class="hotels-item-img-link" href="#" tabindex="-1"><img class="hotels-item-img"
-                    src="images/catalog/hotel-amara-resort-spa.jpg" width="300" height="212"
-                    alt="Амара Резорт и Спа"></a>
+                <a class="hotels-item-img-link" href="#" tabindex="-1">
+                  <img class="hotels-item-img" src="images/catalog/hotel-amara-resort-spa.jpg" width="300" height="212"
+                    alt="Амара Резорт и Спа">
+                </a>
                 <a class="hotels-item-link hotels-item-title-link" href="#" tabindex="-1">
                   <h3 class="catalog-hotel-title">Amara Resort & Spa</h3>
                 </a>
@@ -184,9 +193,10 @@
                 <p class="hotel-rating">Рейтинг: 8,5</p>
               </li>
               <li class="catalog-hotel-card">
-                <a class="hotels-item-img-link" href="#" tabindex="-1"><img class="hotels-item-img"
-                    src="images/catalog/hotel-villas-at-poco-diablo.jpg" width="300" height="212"
-                    alt="Виллы Оф Поко Дайабло"></a>
+                <a class="hotels-item-img-link" href="#" tabindex="-1">
+                  <img class="hotels-item-img" src="images/catalog/hotel-villas-at-poco-diablo.jpg" width="300"
+                    height="212" alt="Виллы Оф Поко Дайабло">
+                </a>
                 <a class="hotels-item-link hotels-item-title-link" href="#" tabindex="-1">
                   <h3 class="catalog-hotel-title">Villas at Poco Diablo</h3>
                 </a>
@@ -204,8 +214,10 @@
                 <p class="hotel-rating">Рейтинг: 9,2</p>
               </li>
               <li class="catalog-hotel-card">
-                <a class="hotels-item-img-link" href="#" tabindex="-1"><img class="hotels-item-img"
-                    src="images/catalog/hotel-desert-quail-inn.jpg" width="300" height="212" alt="Дезерт Квейл Инн"></a>
+                <a class="hotels-item-img-link" href="#" tabindex="-1">
+                  <img class="hotels-item-img" src="images/catalog/hotel-desert-quail-inn.jpg" width="300" height="212"
+                    alt="Дезерт Квейл Инн">
+                </a>
                 <a class="hotels-item-link hotels-item-title-link" href="#" tabindex="-1">
                   <h3 class="catalog-hotel-title">Desert Quail Inn</h3>
                 </a>
@@ -222,8 +234,10 @@
                 <p class="hotel-rating">Рейтинг: 6,9</p>
               </li>
               <li class="catalog-hotel-card">
-                <a class="hotels-item-img-link" href="#" tabindex="-1"><img class="hotels-item-img"
-                    src="images/catalog/hotel-greentree-inn.jpg" width="300" height="212" alt="Гринтри Инн"></a>
+                <a class="hotels-item-img-link" href="#" tabindex="-1">
+                  <img class="hotels-item-img" src="images/catalog/hotel-greentree-inn.jpg" width="300" height="212"
+                    alt="Гринтри Инн">
+                </a>
                 <a class="hotels-item-link hotels-item-title-link" href="#" tabindex="-1">
                   <h3 class="catalog-hotel-title">GreenTree Inn</h3>
                 </a>
@@ -263,7 +277,7 @@
         </div>
         <section data-test="subscribe" class="subscribe">
           <h2 class="subscribe-title subscribe-catalog-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="user-email" class="visually-hidden">Введите ваш e-mail:</label>
             <input class="subscribe-email" id="user-email" name="email" type="email" placeholder="Ваш e-mail"
