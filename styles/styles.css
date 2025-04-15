@@ -84,18 +84,18 @@ body {
 }
 
 .navigation-logo:hover {
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .navigation-logo:focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 3px #68A2CA;
   border-radius: 4px;
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .navigation-logo:active {
-  opacity: 50%;
+  opacity: 0.7;
 }
 
 .navigation-list {
@@ -125,18 +125,18 @@ body {
 }
 
 .navigation-link:hover {
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .navigation-link:focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 3px #68A2CA;
   border-radius: 4px;
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .navigation-link:active {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .navigation-link-current::before {
@@ -192,18 +192,18 @@ body {
 }
 
 .navigation-user-link:hover {
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .navigation-user-link:focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 3px #68A2CA;
   border-radius: 4px;
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .navigation-user-link:active {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .navigation-favourites-number {
@@ -234,7 +234,9 @@ body {
 
 .navigation-user-link-btn {
   display: block;
+  max-width: 160px;
   padding: 8px 34px;
+  box-sizing: border-box;
 
   font-size: 16px;
   line-height: 20px;
@@ -367,7 +369,7 @@ body {
   flex-direction: row-reverse;
 }
 
-.advantages-description {
+.advantages-item-short {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -379,15 +381,15 @@ body {
   box-sizing: border-box;
 }
 
-.advantages-description:nth-child(even) {
+.advantages-item-short:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-description:nth-child(odd) {
+.advantages-item-short:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-description::before {
+.advantages-item-short::before {
   width: 60px;
   height: 2px;
 
@@ -397,7 +399,7 @@ body {
   order: 2;
 }
 
-.advantages-item-with-photo .advantages-description::before {
+.advantages-item-with-photo .advantages-item-short::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -541,6 +543,7 @@ body {
 }
 
 .search-btn {
+  max-width: 400px;
   padding: 8px 50px;
 
   font-family: inherit;
@@ -610,7 +613,12 @@ body {
   border-bottom-left-radius: 4px;
 }
 
+.subscribe-email:hover {
+  background-color: #E5E5E5;
+}
+
 .subscribe-email:focus {
+  background-color: #E5E5E5;
   outline: 3px solid #68A2CA;
   border-radius: 4px;
 }
@@ -845,17 +853,17 @@ body {
 }
 
 .breadcrumbs-item-link:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-item-link:focus-visible {
   outline: 3px solid #68A2CA;
   border-radius: 4px;
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-item-link:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .catalog-filter {
@@ -982,7 +990,7 @@ body {
 }
 
 .filter-input:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .checkbox-input:focus-visible + .checkbox-mark,
@@ -991,12 +999,12 @@ body {
 }
 
 .filter-input:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .filter-input:has(.checkbox-input:disabled),
 .filter-input:has(.radio-input:disabled) {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .cost-filter-field {
@@ -1038,10 +1046,18 @@ body {
   line-height: 24px;
   font-weight: 700;
 
+  background-color: #F2F2F2;
   border-style: none;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.cost-filter-input:hover {
+  background-color: #E5E5E5;
 }
 
 .cost-filter-input:focus-visible {
+  background-color: #E5E5E5;
   outline: 2px solid #83B3D3;
 }
 
@@ -1351,19 +1367,19 @@ body {
 }
 
 .hotels-item-img-link:hover .hotels-item-img {
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .hotels-item-img-link:active .hotels-item-img {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .hotels-item-title-link:hover .catalog-hotel-title {
-  opacity: 75%;
+  opacity: 0.7;
 }
 
 .hotels-item-title-link:active .catalog-hotel-title {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .hotels-item-img {
@@ -1703,7 +1719,12 @@ body {
   border-radius: 4px;
 }
 
+.modal-input:hover {
+  background-color: #E5E5E5;
+}
+
 .modal-input:focus {
+  background-color: #E5E5E5;
   outline: 3px solid #83B3D3;
 }
 
@@ -1822,6 +1843,7 @@ body {
   padding: 24px 20px;
 
   border-style: none;
+  border-radius: 4px;
   opacity: 0.2;
 
   cursor: pointer;
@@ -1849,10 +1871,12 @@ body {
 }
 
 .number-change-button:hover {
+  background-color: #E5E5E5;
   opacity: 1;
 }
 
 .number-change-button:focus-visible {
+  background-color: #E5E5E5;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
   opacity: 1;
