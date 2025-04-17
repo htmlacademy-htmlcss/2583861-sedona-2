@@ -12,7 +12,7 @@
     <div class="site-container">
       <header data-test="header" class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <a class="navigation-logo-link" href="index.html">
             <img src="images/logo-city-of-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -132,8 +132,10 @@
                 </label>
                 <div class="range-slider">
                   <div class="range-bar" style="left: 0; width: 227px">
-                    <button class="range-slider-handler range-slider-handler-min" type="button"></button>
-                    <button class="range-slider-handler range-slider-handler-max" type="button"></button>
+                    <button class="range-slider-handler range-slider-handler-min" type="button"
+                      aria-label="Слайдер минимального значения цены"></button>
+                    <button class="range-slider-handler range-slider-handler-max" type="button"
+                      aria-label="Слайдер максимального значения цены"></button>
                   </div>
                 </div>
               </fieldset>
@@ -156,17 +158,17 @@
             <ul class="view-change-list">
               <li class="view-change-item">
                 <a class="view-change-link view-change-link-tile current" href="catalog.html?view=tile">
-                  <span class="visually-hidden">Плитка</span>
+                  <span class="visually-hidden">Вид плиткой</span>
                 </a>
               </li>
               <li class="view-change-item">
                 <a class="view-change-link view-change-link-card" href="catalog.html?view=card">
-                  <span class="visually-hidden">Карточка</span>
+                  <span class="visually-hidden">Вид карточками</span>
                 </a>
               </li>
               <li class="view-change-item">
                 <a class="view-change-link view-change-link-list" href="catalog.html?view=list">
-                  <span class="visually-hidden">Список</span>
+                  <span class="visually-hidden">Вид списком</span>
                 </a>
               </li>
             </ul>
@@ -322,7 +324,7 @@
         <address class="phone-number">
           <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <a class="htmlacademy-logo-link" href="https://htmlacademy.ru">
+        <a class="htmlacademy-logo-link" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">
           <svg class="htmlacademy-logo" width="115" height="34" viewBox="0 0 115 34" fill="black"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" />
