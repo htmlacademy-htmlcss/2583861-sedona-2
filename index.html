@@ -12,7 +12,7 @@
     <div class="site-container">
       <header data-test="header" class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <a class="navigation-logo-link" href="index.html">
             <img src="images/logo-city-of-sedona.svg" width="140" height="70" alt="Логотип сайта Седона">
           </a>
           <ul class="navigation-list">
@@ -39,7 +39,8 @@
               </a>
             </li>
             <li class="navigation-user-item navigation-user-item-btn">
-              <a class="navigation-user-link-btn btn-main" href="#">Хочу сюда!</a>
+              <a class="navigation-user-link-btn btn-main" href="#"
+                aria-label="Перейти на страницу подбора гостиниц">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -201,7 +202,7 @@
               <input class="modal-input date-input" type="text" id="start-date" name="arrival date"
                 value="27 апреля 2020" required>
               <button class="date-icon-button" type="button"></button>
-              <span class="input-notification input-error">Мы не можем отправить вас в прошлое.</span>
+              <span class="input-notification input-notification-error">Мы не можем отправить вас в прошлое.</span>
             </fieldset>
             <fieldset class="departure-date-field">
               <legend class="visually-hidden">Дата выезда</legend>

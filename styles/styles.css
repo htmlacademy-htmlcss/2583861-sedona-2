@@ -71,31 +71,29 @@ body {
   font-weight: 700;
 }
 
-.navigation-logo {
+.navigation-logo-link {
   display: block;
   z-index: 1;
 
   width: 138px;
   margin-bottom: -11px;
 
-  object-fit: contain;
-
   transition: opacity 0.2s ease-in;
 }
 
-.navigation-logo:hover {
+.navigation-logo-link:hover {
   opacity: 0.7;
 }
 
-.navigation-logo:focus-visible {
+.navigation-logo-link:focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 3px #68A2CA;
   border-radius: 4px;
   opacity: 0.7;
 }
 
-.navigation-logo:active {
-  opacity: 0.7;
+.navigation-logo-link:active {
+  opacity: 0.5;
 }
 
 .navigation-list {
@@ -139,7 +137,7 @@ body {
   opacity: 0.5;
 }
 
-.navigation-link-current::before {
+.navigation-link-current::after {
   position: absolute;
   right: 16px;
   bottom: -1px;
@@ -600,7 +598,7 @@ body {
 
 .subscribe-email {
   flex-grow: 1;
-  padding: 14px 20px;
+  padding: 16px 20px 12px;
   box-sizing: border-box;
 
   font-family: inherit;
@@ -611,6 +609,8 @@ body {
   border-style: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+
+  transition: background-color 0.2s ease-in;
 }
 
 .subscribe-email:hover {
@@ -780,7 +780,7 @@ body {
 .filter-container {
   display: flex;
   flex-direction: column;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 69px 70px 70px;
 
   color: #ffffff;
 
@@ -1103,7 +1103,7 @@ body {
   max-width: 288px;
   height: 4px;
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .range-slider-handler {
@@ -1113,7 +1113,7 @@ body {
   width: 20px;
   height: 20px;
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   border-style: none;
   border-radius: 5px;
 
@@ -1241,7 +1241,7 @@ body {
 .sorting-select {
   width: 292px;
   max-height: 49px;
-  padding: 14px 35px 14px 20px;
+  padding: 12px 35px 15px 20px;
   box-sizing: border-box;
 
   font-family: inherit;
@@ -1252,7 +1252,7 @@ body {
   background-color: #ffffff;
   background-image: url(../images/sorting-select-icon.svg);
   background-repeat: no-repeat;
-  background-position: center right 20px;
+  background-position: center right 19px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 
@@ -1337,8 +1337,9 @@ body {
 
 .catalog-hotels-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 340px);
   gap: 20px;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -1603,7 +1604,7 @@ body {
   width: 717px;
   margin: auto;
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   border-radius: 30px;
 }
 
@@ -1613,6 +1614,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 64px 70px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .modal-close-button {
@@ -1643,7 +1655,7 @@ body {
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #000000;
 
   content: "";
 
@@ -1661,17 +1673,6 @@ body {
 
 .modal-close-button:active::before {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.modal-title {
-  margin: 0;
-  margin-bottom: 64px;
-
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
 }
 
 .modal-form {
@@ -1735,7 +1736,7 @@ body {
 
 .date-icon-button {
   position: absolute;
-  right: 14px;
+  right: 20px;
   width: 20px;
 
   display: block;
@@ -1781,7 +1782,7 @@ body {
   line-height: 21px;
 }
 
-.input-error {
+.input-notification-error {
   color: #FF5757;
 }
 
@@ -1801,16 +1802,6 @@ body {
   position: relative;
 
   grid-column: 1/2;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-
-  border-style: none;
-}
-
-.kids-number-fieldset {
-  grid-column: 3/4;
   display: flex;
   align-items: center;
   margin: 0;
@@ -1894,6 +1885,16 @@ body {
   margin: 0;
 }
 
+.kids-number-fieldset {
+  grid-column: 3/4;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  border-style: none;
+}
+
 .tooltip-container {
   position: relative;
 
@@ -1933,7 +1934,7 @@ body {
   width: 256px;
   min-height: 143px;
   margin: 0;
-  padding: 18px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
   box-sizing: border-box;
 
   font-size: 16px;
@@ -1942,7 +1943,7 @@ body {
   text-transform: none;
   color: #FFFFFF;
 
-  background-color: rgba(51, 51, 51, 1);
+  background-color: #333333;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -1965,7 +1966,7 @@ body {
 
 .find-btn {
   grid-column: 1/4;
-  padding: 18px 0;
+  padding: 18px 10px 18px 15px;
 
   font-size: 20px;
   line-height: 24px;
