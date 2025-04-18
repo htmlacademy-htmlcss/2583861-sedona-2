@@ -466,7 +466,7 @@ body {
   align-items: center;
   width: 400px;
   min-height: 385px;
-  padding: 10px 85px;
+  padding: 80px 85px;
   box-sizing: border-box;
 }
 
@@ -1118,6 +1118,7 @@ body {
   border-radius: 5px;
 
   cursor: grab;
+  transition: background-color 0.2s ease-in;
 }
 
 .range-slider-handler-min {
@@ -1126,6 +1127,10 @@ body {
 
 .range-slider-handler-max {
   right: 0;
+}
+
+.range-slider-handler:hover {
+  background-color: #c5c5c5;
 }
 
 .range-slider-handler:focus {
@@ -1470,21 +1475,30 @@ body {
 }
 
 .hotel-stars {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  justify-content: flex-start;
-  align-items: center;
+  background-image: url(../images/star-icon.svg);
+  background-repeat: space no-repeat;
+  background-position: left center;
+  background-size: 18px 17px;
 }
 
-.hotel-single-star {
+.hotel-stars-1 {
   width: 18px;
-  height: 17px;
+}
 
-  background-image: url(../images/star-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.hotel-stars-2 {
+  width: 42px;
+}
+
+.hotel-stars-3 {
+  width: 66px;
+}
+
+.hotel-stars-4 {
+  width: 89px;
+}
+
+.hotel-stars-5 {
+  width: 107px;
 }
 
 .hotel-rating {
